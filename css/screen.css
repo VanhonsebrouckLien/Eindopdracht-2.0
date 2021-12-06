@@ -56,7 +56,9 @@ main {
 .c-header {
   padding: 0;
   margin: 0;
-  max-height: 600px;
+  overflow: auto;
+  height: 600px;
+  position: relative;
 }
 
 .c-header__video {
@@ -64,8 +66,10 @@ main {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
   z-index: 0;
+  position: absolute;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .c-header__text {
@@ -76,6 +80,8 @@ main {
   font-style: normal;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 300px;
+  margin-left: 682px;
   z-index: 1;
 }
 
