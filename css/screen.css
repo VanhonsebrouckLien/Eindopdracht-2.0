@@ -56,14 +56,13 @@ main {
 .c-header {
   padding: 0;
   margin: 0;
-  overflow: auto;
-  height: 600px;
+  height: 500px;
   position: relative;
 }
 
 .c-header__video {
   width: 100%;
-  height: 600px;
+  height: 900px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
@@ -147,6 +146,15 @@ main {
 .c-footer {
   background-color: #7f4c3b;
   padding-bottom: 1.5rem;
+}
+
+.c-footer__container {
+  border-top: 4px solid #cdbeb1;
+  border-radius: 4px;
+}
+
+.c-footer__row {
+  padding-top: 2rem;
 }
 
 .c-footer__naam {
