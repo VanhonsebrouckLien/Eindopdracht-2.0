@@ -1,0 +1,175 @@
+/*---------------------------------------/*
+  # SETTINGS
+/*---------------------------------------*/
+$color-light: #cdbeb1;
+$color-white: #fffaf6;
+$color-brown: #543824;
+$color-background: #7f4c3b;
+$color-button: #a46f38;
+
+$font-title: brandon-grotesque, sans-serif;
+$font-text: neue-kabel, sans-serif;
+/*---------------------------------------/*
+  # GENERIC
+/*---------------------------------------*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------/*
+  # ELEMENTS
+/*---------------------------------------*/
+
+nav {
+  background-color: $color-light;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  & .c-nav {
+    &__menu {
+      &--link {
+        color: $color-brown !important;
+        margin-left: 2.5rem;
+        &:hover{
+          font-weight: 600;
+        }
+      }
+    }
+    &__brand {
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 3rem;
+      &--img {
+        margin-right: 3rem;                                                                                                                                                                       
+      }
+    }
+  }
+}
+
+main{
+  background-color: $color-background;
+  padding: 5rem 0;
+}
+/*---------------------------------------/*
+  # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+  # COMPONENTS
+/*---------------------------------------*/
+
+.c-header{
+  padding:0;
+  margin: 0;
+  max-height: 600px;
+  &__video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__text{
+    position: absolute;
+    color: $color-white;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+.c-types{
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+  &__item{
+     img{
+       margin-bottom: 1rem;
+       width: 300px;
+       align-self: center;
+       margin-top: 16px;
+     }
+  }
+}
+
+.c-card{
+  height: 100%;
+  border: none;
+  background-color: $color-light;
+  color: $color-white;
+  font-family: $font-text;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  &__text{
+     h2{
+      font-size: 2.5rem;
+     }
+    &--btn{
+      font-size: 1.5;
+      background-color: $color-button;
+      border: 2px solid $color-button;
+      width: 200px;
+      align-self: center;
+      margin-bottom: 2rem;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid $color-button;
+        color: $color-brown;
+      }
+    }
+  }
+}
+
+.c-text{
+  color: $color-white;
+  font-family: $font-title;
+  font-weight: 600;
+  font-style: normal;
+  margin: 4rem 0;
+   h3{
+     font-size: 3rem;
+   }
+}
+
+.c-footer{
+  background-color: $color-background;
+  padding-bottom: 1.5rem;
+  &__naam{
+    font-family: $font-text;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $color-white;
+  }
+  &__social{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+     p{
+      color: $color-white; 
+       margin: 0;
+       align-self: center;
+       font-family: $font-text;
+       font-weight: 500;
+       font-size: 1.5rem;
+     }
+    &--img{
+      padding-left: 2rem;
+    }
+  }
+}
+/*---------------------------------------/*
+  # BOOTSTRAP
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+  # UTILITIES
+/*---------------------------------------*/

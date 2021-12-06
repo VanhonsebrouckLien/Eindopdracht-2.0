@@ -1,0 +1,184 @@
+/*---------------------------------------/*
+  # SETTINGS
+/*---------------------------------------*/
+/*---------------------------------------/*
+  # GENERIC
+/*---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*---------------------------------------/*
+  # ELEMENTS
+/*---------------------------------------*/
+nav {
+  background-color: #cdbeb1;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+nav .c-nav__menu--link {
+  color: #543824 !important;
+  margin-left: 2.5rem;
+}
+
+nav .c-nav__menu--link:hover {
+  font-weight: 600;
+}
+
+nav .c-nav__brand {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+nav .c-nav__brand--img {
+  margin-right: 3rem;
+}
+
+main {
+  background-color: #7f4c3b;
+  padding: 5rem 0;
+}
+
+/*---------------------------------------/*
+  # OBJECTS
+/*---------------------------------------*/
+/*---------------------------------------/*
+  # COMPONENTS
+/*---------------------------------------*/
+.c-header {
+  padding: 0;
+  margin: 0;
+  max-height: 600px;
+}
+
+.c-header__video {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.c-header__text {
+  position: absolute;
+  color: #fffaf6;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.c-types {
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.c-types__item img {
+  margin-bottom: 1rem;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 16px;
+}
+
+.c-card {
+  height: 100%;
+  border: none;
+  background-color: #cdbeb1;
+  color: #fffaf6;
+  font-family: neue-kabel, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.c-card__text h2 {
+  font-size: 2.5rem;
+}
+
+.c-card__text--btn {
+  font-size: 1.5;
+  background-color: #a46f38;
+  border: 2px solid #a46f38;
+  width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+}
+
+.c-card__text--btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a46f38;
+  color: #543824;
+}
+
+.c-text {
+  color: #fffaf6;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 4rem 0;
+}
+
+.c-text h3 {
+  font-size: 3rem;
+}
+
+.c-footer {
+  background-color: #7f4c3b;
+  padding-bottom: 1.5rem;
+}
+
+.c-footer__naam {
+  font-family: neue-kabel, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fffaf6;
+}
+
+.c-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-footer__social p {
+  color: #fffaf6;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: neue-kabel, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.c-footer__social--img {
+  padding-left: 2rem;
+}
+
+/*---------------------------------------/*
+  # BOOTSTRAP
+/*---------------------------------------*/
+/*---------------------------------------/*
+  # UTILITIES
+/*---------------------------------------*/
