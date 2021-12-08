@@ -55,6 +55,14 @@ main {
   background-color: $color-background;
   padding: 5rem 0;
 }
+
+h1 {
+  color: $color-white;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+}
 /*---------------------------------------/*
   # OBJECTS
 /*---------------------------------------*/
@@ -79,14 +87,9 @@ main {
 
   &__text {
     position: absolute;
-    color: $color-white;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
     text-align: center;
     margin-top: 300px;
-    margin-left: 580px;
+    margin-left: 700px;
     z-index: 1;
   }
 }
