@@ -50,8 +50,15 @@ nav {
       font-weight: 700;
       font-style: normal;
       font-size: 2rem;
+      @media only screen and (max-width: 426px) {
+        font-size: 1.5rem;
+      }
       &--img {
         margin-right: 20px;
+        @media only screen and (max-width: 426px) {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
   }
@@ -194,7 +201,7 @@ h1 {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     &--image {
@@ -227,6 +234,18 @@ h1 {
     display: flex;
     align-self: center;
     justify-content: center;
+    height: 50px;
+    min-width: 80px;
+    a {
+      width: 50px;
+      margin: 10px;
+    }
+    p {
+      padding-right: 20px;
+    }
+    @media only screen and (max-width: 426px) {
+      margin-bottom: 20px;
+    }
     p {
       color: $color-white;
       margin: 0;
@@ -239,28 +258,28 @@ h1 {
         margin: 0;
       }
     }
-    &--img {
-      padding-left: 2rem;
-      img {
-        @media only screen and (max-width: 426px) {
-          height: 22px;
-          width: 22px;
-        }
-        @media only screen and (max-width: 426px) {
-          display: flex;
-          padding: 0;
-          margin-bottom: 10px;
-        }
+    &--svg {
+      margin: 20px;
+      width: 50px;
+      height: 50px;
+      fill: $color-light;
+      &:hover {
+        fill: $color-white;
       }
     }
   }
 }
+
 /*---------------------------------------/*
   # BOOTSTRAP
 /*---------------------------------------*/
 
 .navbar-dark .navbar-nav .nav-link {
   padding: 0px 10px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-three-dots' viewBox='0 0 16 16'%3E%3Cpath d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
+  fill: $color-brown;
 }
 /*---------------------------------------/*
   # UTILITIES

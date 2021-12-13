@@ -47,8 +47,21 @@ nav .c-nav__brand {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 426px) {
+  nav .c-nav__brand {
+    font-size: 1.5rem;
+  }
+}
+
 nav .c-nav__brand--img {
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 426px) {
+  nav .c-nav__brand--img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 main {
@@ -232,7 +245,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -284,6 +297,23 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
+  min-width: 80px;
+}
+
+.c-footer__social a {
+  width: 50px;
+  margin: 10px;
+}
+
+.c-footer__social p {
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 426px) {
+  .c-footer__social {
+    margin-bottom: 20px;
+  }
 }
 
 .c-footer__social p {
@@ -304,25 +334,15 @@ h1 {
   }
 }
 
-.c-footer__social--img {
-  padding-left: 2rem;
+.c-footer__social--svg {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  fill: #cdbeb1;
 }
 
-@media only screen and (max-width: 426px) {
-  .c-footer__social--img img {
-    height: 22px;
-    width: 22px;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  .c-footer__social--img img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    margin-bottom: 10px;
-  }
+.c-footer__social--svg:hover {
+  fill: #fffaf6;
 }
 
 /*---------------------------------------/*
@@ -330,6 +350,11 @@ h1 {
 /*---------------------------------------*/
 .navbar-dark .navbar-nav .nav-link {
   padding: 0px 10px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-three-dots' viewBox='0 0 16 16'%3E%3Cpath d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
+  fill: #543824;
 }
 
 /*---------------------------------------/*
